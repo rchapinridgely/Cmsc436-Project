@@ -14,7 +14,7 @@ public class InitSearchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_init_search);
 
-        Button NVDIButton = findViewById(R.id.NVDI);
+        Button NVDIButton = (Button) findViewById(R.id.NVDI);
         NVDIButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -23,7 +23,8 @@ public class InitSearchActivity extends AppCompatActivity {
             }
         });
 
-        Button NAVButton = findViewById(R.id.NAV);
+        Button NAVButton = (Button)findViewById(R.id.NAV);
+
         NAVButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

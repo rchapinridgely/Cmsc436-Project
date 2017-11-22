@@ -13,7 +13,7 @@ public class ImageScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_init_search);
 
-        Button saveButton = findViewById(R.id.save);
+        Button saveButton = (Button) findViewById(R.id.save);
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -22,7 +22,7 @@ public class ImageScreen extends AppCompatActivity {
             }
         });
 
-        Button shareButton = findViewById(R.id.share);
+        View shareButton = findViewById(R.id.share);
         shareButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

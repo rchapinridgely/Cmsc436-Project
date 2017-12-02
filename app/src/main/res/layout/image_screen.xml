@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cmsc436.cmsc436_group.ImageScreen">
+    tools:context="cmsc436group.myapplication.ImageScreen">
 
 
 

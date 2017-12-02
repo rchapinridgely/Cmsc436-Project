@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+
+    <string-array name="radiusList">
+        <item>Select Radius</item>
+        <item>10 miles</item>
+        <item>20 miles</item>
+        <item>50 miles</item>
+        <item>100 miles</item>
+        <item>1000 miles</item>
+
+    </string-array>
+
+
+</resources>

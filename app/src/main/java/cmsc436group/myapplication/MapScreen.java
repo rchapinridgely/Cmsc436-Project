@@ -11,7 +11,7 @@ public class MapScreen extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.map_screen);
 
         Button NVDIButton = (Button)findViewById(R.id.NVDI);
         NVDIButton.setOnClickListener(new View.OnClickListener() {

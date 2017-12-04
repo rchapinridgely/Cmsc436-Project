@@ -39,38 +39,73 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         final Geocoder geo = new Geocoder(this);
-
-        Button NVDIButton = (Button) findViewById(R.id.NVDI);
-        NVDIButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent imageIntent = new Intent(MainActivity.this, ImageScreen.class);
-                startActivity(imageIntent);
-            }
-        });
-
-        Button NAVButton = (Button)findViewById(R.id.NAV);
-
-        NAVButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent mapIntent = new Intent(MainActivity.this, MapScreen.class);
-                startActivity(mapIntent);
-            }
-        });
-
 
 
         final TextView tv = (TextView) findViewById(R.id.textView4);
         Button b1 = (Button)findViewById(R.id.button1);
         Button b2 = (Button)findViewById(R.id.button2);
-       // Button b3 = (Button)findViewById(R.id.button3);
+        // Button b3 = (Button)findViewById(R.id.button3);
         //Button b4 = (Button)findViewById(R.id.button4);
 
         final EditText et1 = (EditText)findViewById(R.id.editText1);
         final EditText et2 = (EditText)findViewById(R.id.editText2);
         final EditText et3 = (EditText)findViewById(R.id.editText3);
+
+        Button NVDIButton = (Button) findViewById(R.id.Display);
+        NVDIButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent imageIntent = new Intent(MainActivity.this, MapScreen.class);
+                Intent intent = new Intent(getBaseContext(), MapScreen.class);
+
+
+                String str = et3.getText().toString();
+
+                List<Address> list = null;
+
+
+                try {
+                    list = geo.getFromLocationName(
+                            str,
+                            10);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    Log.e("test", "Error");
+                }
+
+                if (list != null) {
+                    if (list.size() == 0) {
+                    } else {
+                        double longitude = list.get(0).getLongitude();
+                        double latitude = list.get(0).getLatitude();
+                        //          list.get(0).getCountryName();
+                        //          list.get(0).getLatitude();
+                        //          list.get(0).getLongitude();
+
+                        intent.putExtra("EXTRA_SESSION_ID", list.get(0).getAddressLine(0));
+                        startActivity(intent);
+                        //startActivity(imageIntent);
+                    }
+                }
+            }
+        });
+
+//        Button NAVButton = (Button)findViewById(R.id.NAV);
+//
+//        NAVButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent mapIntent = new Intent(MainActivity.this, MapScreen.class);
+//                startActivity(mapIntent);
+//            }
+//        });
+
+
+
+
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,6 +134,11 @@ public class MainActivity extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Intent intent = new Intent(getBaseContext(), MapScreen.class);
+
+
+
                 List<Address> list = null;
 
 
@@ -123,6 +163,9 @@ public class MainActivity extends AppCompatActivity {
                         //          list.get(0).getCountryName();
                         //          list.get(0).getLatitude();
                         //          list.get(0).getLongitude();
+
+//                        intent.putExtra("EXTRA_SESSION_ID", list.get(0).getAddressLine(0));
+//                        startActivity(intent);
                     }
                 }
             }

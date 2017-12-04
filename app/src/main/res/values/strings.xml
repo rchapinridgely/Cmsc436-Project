@@ -11,6 +11,7 @@
         <item>1000 miles</item>
 
     </string-array>
+    <string name="saved">This image file has been saved to the drawable folder</string>
 
 
 </resources>

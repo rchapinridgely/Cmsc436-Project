@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Mark Lyons\.android\build-cache\219ef0785b395b643eee4d737a80126b419704b1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="C:\Users\Mark Lyons\Desktop\PlanetsProj\Cmsc436-Project\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e5c02bbffea9b02281c516e7d468548cf408b437\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Mark Lyons\.android\build-cache\c0530656e7b3c897035dbcab12b63f3fc72248cd\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="C:\Users\Mark Lyons\Desktop\PlanetsProj\Cmsc436-Project\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a5bf835da5ceb1e872c816f5486f54b088ecb8ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Mark Lyons\.android\build-cache\6a34450b9a42691e63d7d2c39f5cb43bdd0f79cc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="C:\Users\Mark Lyons\Desktop\PlanetsProj\Cmsc436-Project\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_61105804ae6060015c83f04345be4335346d85dd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Mark Lyons\Desktop\PlanetsProj\Cmsc436-Project\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Mark Lyons\Desktop\PlanetsProj\Cmsc436-Project\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_86917c8a4b66daaaafc9cdfd8b6225363a5c5c66\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Mark Lyons\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\Mark Lyons\Desktop\PlanetsProj\Cmsc436-Project\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_5b99005d385d259f7c41e0ce149a6ace0196fe61\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Mark Lyons\Desktop\PlanetsProj\Cmsc436-Project\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b982a44cafd6711c18241951d5141a3e6dd888bb">
+        <dex dex="C:\Users\Mark Lyons\Desktop\PlanetsProj\Cmsc436-Project\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_bff3be7f706d2b70da87684a2e849b30fef0878c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Mark Lyons\.android\build-cache\c78dabdbb7807fe6e44077655894e3e78ba91f01\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\Mark Lyons\Desktop\PlanetsProj\Cmsc436-Project\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_030d2002f99b20121cfc6cb0420251e64be8878d\classes.dex" />
+    </item>
+
+</items>

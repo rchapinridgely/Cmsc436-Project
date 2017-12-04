@@ -21,6 +21,10 @@ public class MapScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.map_screen);
 
+        ImageView mImageView;
+        mImageView = (ImageView) findViewById(R.id.NDVIImage);
+        mImageView.setImageResource(getResources().getIdentifier("nav", "drawable", getPackageName()));
+
 //         String str = getIntent().getStringExtra("EXTRA_SESSION_ID");
 //final String cityName = str.replaceAll(" ", "_").toLowerCase().trim();
 //
@@ -63,8 +67,10 @@ public class MapScreen extends AppCompatActivity {
                 ImageView mImageView;
                 mImageView = (ImageView) findViewById(R.id.NDVIImage);
                 String str = getIntent().getStringExtra("EXTRA_SESSION_ID");
-                String imageName = "new_york_ny";
-                 String cityName = str.replaceAll(" ", "_").toLowerCase().trim();
+                float latitude = getIntent().getFloatExtra("LATITUDE", 0);
+                float longitude = getIntent().getFloatExtra("LONGITUDE", 0);
+                String imageName = "nav";
+                String cityName = str.replaceAll(" ", "_").toLowerCase().trim();
 //                if(cityName =="new york ny" ){
 //                    imageName = "img1";
 //                }
@@ -87,11 +93,11 @@ public class MapScreen extends AppCompatActivity {
              //   String imageName = "test1.tif";
                // mImageView.setImageResource(R.drawable.test2);
                 String str = getIntent().getStringExtra("EXTRA_SESSION_ID");
-                String imageName = "";
+                String imageName = "new_york_ny";
                 final String cityName = str.replaceAll(" ", "_").toLowerCase().trim();
-                if(cityName =="new_york_ny" ){
-                    imageName = "img1";
-                }
+                //if(cityName =="new_york_ny" ){
+                //    imageName = "img1";
+                //}
                 mImageView.setImageResource(getResources().getIdentifier(imageName, "drawable", getPackageName()));
 
             }

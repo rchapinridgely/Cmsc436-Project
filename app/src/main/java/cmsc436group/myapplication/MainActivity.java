@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ProgressDialog progress;
 
+    Geocoder mGeo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        final Geocoder geo = new Geocoder(this);
+        mGeo = new Geocoder(this);
 
 
         final TextView tv = (TextView) findViewById(R.id.textView4);
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 try {
-                    list = geo.getFromLocationName(
+                    list = mGeo.getFromLocationName(
                             str,
                             10);
                 } catch (IOException e) {
@@ -117,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
                     double d1 = Double.parseDouble(et1.getText().toString());
                     double d2 = Double.parseDouble(et2.getText().toString());
 
-                    list = geo.getFromLocation(d1, d2, 10);
+                    list = mGeo.getFromLocation(d1, d2, 10);
                 } catch (IOException e) {
                     e.printStackTrace();
                     Log.e("test", "Error");
@@ -145,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String str = et3.getText().toString();
                 try {
-                    list = geo.getFromLocationName(
+                    list = mGeo.getFromLocationName(
                             str,
                             10);
                 } catch (IOException e) {

@@ -54,8 +54,16 @@ public class MapScreen extends AppCompatActivity {
                     /*      Your code   to get date and time    */
                     }
                 },mYear, mMonth, mDay);
+
+                int newNDVIthumb = 2 + (int)(Math.random() * ((3 - 2) + 1));
+
+                String newNDVIthumbName = "ndvi_output" + newNDVIthumb;
+                ImageView mImageView = (ImageView) findViewById(R.id.NDVIImage);
+                mImageView.setImageResource(getResources().getIdentifier(newNDVIthumbName, "drawable", getPackageName()));
+
                 mDatePicker.setTitle("Select date");
-                mDatePicker.show();  }
+                mDatePicker.show();
+            }
         });
 
         Button NDVIButton = (Button)findViewById(R.id.GotoNDVI);
@@ -69,7 +77,7 @@ public class MapScreen extends AppCompatActivity {
                 String str = getIntent().getStringExtra("EXTRA_SESSION_ID");
                 float latitude = getIntent().getFloatExtra("LATITUDE", 0);
                 float longitude = getIntent().getFloatExtra("LONGITUDE", 0);
-                String imageName = "nav";
+                String imageName = "ndvi_output";
                 String cityName = str.replaceAll(" ", "_").toLowerCase().trim();
 //                if(cityName =="new york ny" ){
 //                    imageName = "img1";
@@ -93,7 +101,7 @@ public class MapScreen extends AppCompatActivity {
              //   String imageName = "test1.tif";
                // mImageView.setImageResource(R.drawable.test2);
                 String str = getIntent().getStringExtra("EXTRA_SESSION_ID");
-                String imageName = "new_york_ny";
+                String imageName = "nav";
                 final String cityName = str.replaceAll(" ", "_").toLowerCase().trim();
                 //if(cityName =="new_york_ny" ){
                 //    imageName = "img1";
